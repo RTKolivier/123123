@@ -1,0 +1,47 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="diplomdemo.MainWindow"
+        Title="diplomdemo">
+	<DockPanel>
+		<StackPanel>
+			<TextBlock
+				VerticalAlignment="Center" HorizontalAlignment="Center"
+				FontSize="24" FontFamily="Times New Roman" Margin="0,80,0,10">
+				Авторизация:</TextBlock>
+		<TextBox
+			Height="40" Width="200"
+			Watermark="Логин:"
+			FontSize="20" Name="LoginBox"></TextBox>
+		<TextBox
+			Height="40" Width="200"
+			Margin="0,10,0,0"
+			Watermark="Пароль:"
+			FontSize="20" Name="PasswordBox"></TextBox>
+		<Button
+			Height="40" Width="200"
+			VerticalAlignment="Center"
+			HorizontalAlignment="Center"
+			Margin="0,10,0,10"
+			Content="Авторизоваться"
+			FontSize="20"
+			Name="Auto_button"
+			Click="Button_Click"></Button>
+			<TextBlock
+				VerticalAlignment="Center" HorizontalAlignment="Center"
+				FontSize="15"  Margin="0,0,0,10">
+				Нет аккаунта?</TextBlock>
+		<Button
+			Height="40" Width="200"
+			VerticalAlignment="Center"
+			HorizontalAlignment="Center"
+			Margin="0,0,0,10"
+			Content="Зарегистрироваться"
+			FontSize="20"
+			Name="Reg_button"
+			Click="Reg_Button_Click"></Button>
+		</StackPanel>
+	</DockPanel>
+</Window>

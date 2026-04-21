@@ -1,0 +1,58 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="diplomdemo.ProductWin"
+        Title="ProductWin"
+		x:CompileBindings="False">
+	<DockPanel>
+		<StackPanel>
+			<TextBlock Name="UserBlock" HorizontalAlignment="Left" Margin="10" FontSize="20"/>
+		<Button
+			Width="80" Height="40"
+			Content="Назад" FontSize="20"
+			Name="Back_Button" Click="Back_Click"
+			VerticalAlignment="Top"
+			Margin="10"></Button>
+		<Button Width="150" Height="40"
+			Content="Добавить товар" FontSize="20"
+		    VerticalAlignment="Top" Margin="10"
+				Name="AddProduct" Click="AddProduct_Click">
+		</Button>
+			<TextBox  Watermark="Поиск" Name="SearchBox" KeyUp="SearchBox_KeyUp" Width="200">	
+			</TextBox>
+			<ComboBox Name="FilterCombo"
+				   SelectionChanged="SortingCombo_SelectionChanged"
+				   PlaceholderText="Фильтрация по фандомам"
+				   HorizontalAlignment="Stretch"/>
+			<ComboBox Name="SortingCombo"
+                    SelectionChanged="SortingCombo_SelectionChanged"
+                    PlaceholderText="Сортирование по кол-ву"
+                     HorizontalAlignment="Stretch">
+				<ComboBoxItem>По убыванию</ComboBoxItem>
+				<ComboBoxItem>По возрастанию</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+		<StackPanel>
+			<ListBox Name="ProductList" Height="800">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<DockPanel>
+							<Image Height="150" Width="150 " Margin="5" Source="{Binding GetPhoto}"></Image>
+							<StackPanel>
+								<TextBlock Text="{Binding ProductName,StringFormat='Название:{0}'}}"></TextBlock>
+								<TextBlock Text="{Binding ProductTypeNavigation.ProductTypeName,StringFormat='Тип:{0}'}}"></TextBlock>
+								<TextBlock Text="{Binding ProductSizeNavigation.ProductSizeName,StringFormat='Размер:{0}'}}"></TextBlock>
+								<TextBlock Text="{Binding ProductQuantity,StringFormat='Количество:{0}'}}"></TextBlock>
+								<TextBlock Text="{Binding ProductCost,StringFormat='Стоимость:{0} рублей'}}"></TextBlock>
+								<TextBlock Text="{Binding ProductFandomNavigation.FandomsName,StringFormat='Фандом:{0}'}}"></TextBlock>
+								<TextBlock Text="{Binding ProductSale,StringFormat='Скидка:{0}'}}"></TextBlock>
+							</StackPanel>
+						</DockPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+		</StackPanel>
+	</DockPanel>
+</Window>

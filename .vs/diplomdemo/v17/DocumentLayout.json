@@ -1,0 +1,261 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\regwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\regwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\regwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\regwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\productwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\productwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\productwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\productwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\addproduct.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\addproduct.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\addproduct.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\addproduct.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|c:\\users\\\u043E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\models\\productsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0A93C-1EBE-45E5-9D97-D6137E75137A}|diplomdemo\\diplomdemo.csproj|solutionrelative:diplomdemo\\models\\productsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegWin.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\RegWin.axaml.cs",
+              "RelativeDocumentMoniker": "diplomdemo\\RegWin.axaml.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\RegWin.axaml.cs",
+              "RelativeToolTip": "diplomdemo\\RegWin.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T21:05:16.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegWin.axaml",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\RegWin.axaml",
+              "RelativeDocumentMoniker": "diplomdemo\\RegWin.axaml",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\RegWin.axaml",
+              "RelativeToolTip": "diplomdemo\\RegWin.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-21T20:54:46.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductSize.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\Models\\ProductSize.cs",
+              "RelativeDocumentMoniker": "diplomdemo\\Models\\ProductSize.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\Models\\ProductSize.cs",
+              "RelativeToolTip": "diplomdemo\\Models\\ProductSize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:48:01.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddProduct.axaml",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\AddProduct.axaml",
+              "RelativeDocumentMoniker": "diplomdemo\\AddProduct.axaml",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\AddProduct.axaml",
+              "RelativeToolTip": "diplomdemo\\AddProduct.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-21T18:34:47.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddProduct.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\AddProduct.axaml.cs",
+              "RelativeDocumentMoniker": "diplomdemo\\AddProduct.axaml.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\AddProduct.axaml.cs",
+              "RelativeToolTip": "diplomdemo\\AddProduct.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:34:47.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "diplomdemo\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\Models\\Product.cs",
+              "RelativeToolTip": "diplomdemo\\Models\\Product.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA8wEQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T17:49:07.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductWin.axaml",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\ProductWin.axaml",
+              "RelativeDocumentMoniker": "diplomdemo\\ProductWin.axaml",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\ProductWin.axaml",
+              "RelativeToolTip": "diplomdemo\\ProductWin.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-21T17:22:45.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductWin.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\ProductWin.axaml.cs",
+              "RelativeDocumentMoniker": "diplomdemo\\ProductWin.axaml.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\ProductWin.axaml.cs",
+              "RelativeToolTip": "diplomdemo\\ProductWin.axaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwFgAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T17:22:45.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "diplomdemo\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\MainWindow.axaml",
+              "RelativeToolTip": "diplomdemo\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:57:51.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "diplomdemo\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\MainWindow.axaml.cs",
+              "RelativeToolTip": "diplomdemo\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:57:44.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\Program.cs",
+              "RelativeDocumentMoniker": "diplomdemo\\Program.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\Program.cs",
+              "RelativeToolTip": "diplomdemo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T20:56:57.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "diplomdemo\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\Models\\Role.cs",
+              "RelativeToolTip": "diplomdemo\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T21:17:41.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\Models\\User.cs",
+              "RelativeDocumentMoniker": "diplomdemo\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\Models\\User.cs",
+              "RelativeToolTip": "diplomdemo\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T21:17:46.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\App.axaml",
+              "RelativeDocumentMoniker": "diplomdemo\\App.axaml",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0438\u0432\u044C\u0435\\source\\repos\\diplomdemo\\diplomdemo\\App.axaml",
+              "RelativeToolTip": "diplomdemo\\App.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T18:21:20.525Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
