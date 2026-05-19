@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="diplomdemo/AddProduct.axaml" value="diplomdemo/diplomdemo.csproj" />
+        <entry key="diplomdemo/AddProductWindow.axaml" value="diplomdemo/diplomdemo.csproj" />
+        <entry key="diplomdemo/App.axaml" value="diplomdemo/diplomdemo.csproj" />
+        <entry key="diplomdemo/MainWindow.axaml" value="diplomdemo/diplomdemo.csproj" />
+        <entry key="diplomdemo/ProductHistoryWindow.axaml" value="diplomdemo/diplomdemo.csproj" />
+        <entry key="diplomdemo/ProductWin.axaml" value="diplomdemo/diplomdemo.csproj" />
+        <entry key="diplomdemo/RegWin.axaml" value="diplomdemo/diplomdemo.csproj" />
+        <entry key="diplomdemo/ReportMarketWindow.axaml" value="diplomdemo/diplomdemo.csproj" />
+        <entry key="diplomdemo/ReportShelfWindow.axaml" value="diplomdemo/diplomdemo.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

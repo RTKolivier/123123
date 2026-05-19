@@ -1,0 +1,52 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Avalonia;assembly=LiveChartsCore.SkiaSharpView.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="800"
+        x:Class="diplomdemo.ReportShelfWindow"
+        Title="Отчётность по полкам"
+        x:CompileBindings="False">
+    <DockPanel Margin="15">
+        <StackPanel DockPanel.Dock="Left" Spacing="10" Width="300">
+            <TextBlock Text="Сумма продаж по датам" FontSize="16" FontWeight="SemiBold"/>
+            <TextBox Watermark="Наименование товара - количество;"
+                     Name="ListProducts" Height="150" TextWrapping="WrapWithOverflow"
+                     AcceptsReturn="True"/>
+            <Button Content="Добавить продажи" Click="CreateSell"/>
+        </StackPanel>
+        <Button Content="Назад" Click="Back_Click" DockPanel.Dock="Bottom" HorizontalAlignment="Left"/> 
+
+        <ScrollViewer Margin="10,0,0,0" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Spacing="10">
+                <lvc:CartesianChart x:Name="SalesChart" Height="350"/>
+
+                <TextBlock Text="Детализация продаж" FontSize="16" FontWeight="SemiBold"/>
+
+                <Border BorderBrush="#CCCCCC" BorderThickness="1" Padding="8,6">
+                    <Grid ColumnDefinitions="110,*,80,100">
+                        <TextBlock Grid.Column="0" Text="Дата" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="1" Text="Товар" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="2" Text="Кол-во" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                        <TextBlock Grid.Column="3" Text="Сумма, ₽" FontWeight="SemiBold" HorizontalAlignment="Right"/>
+                    </Grid>
+                </Border>
+
+                <ListBox x:Name="SalesTable" MaxHeight="280">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="#EEEEEE" BorderThickness="0,0,0,1" Padding="8,6">
+                                <Grid ColumnDefinitions="110,*,80,100">
+                                    <TextBlock Grid.Column="0" Text="{Binding SaleDate}"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding ProductName}" TextWrapping="Wrap"/>
+                                    <TextBlock Grid.Column="2" Text="{Binding Quantity}" HorizontalAlignment="Center"/>
+                                    <TextBlock Grid.Column="3" Text="{Binding TotalAmount}" HorizontalAlignment="Right"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</Window>

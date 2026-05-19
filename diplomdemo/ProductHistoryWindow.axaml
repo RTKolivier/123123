@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="diplomdemo.ProductHistoryWindow"
+        x:CompileBindings="False"
+        Title="История товаров" Height="400" Width="700">
+    <DockPanel Margin="15">
+        <Border BorderBrush="#CCCCCC" BorderThickness="1" Padding="8,6" DockPanel.Dock="Top">
+            <Grid ColumnDefinitions="200,*,80">
+                <TextBlock Grid.Column="0" Text="Дата" FontWeight="SemiBold"/>
+                <TextBlock Grid.Column="1" Text="Товар" FontWeight="SemiBold"/>
+                <TextBlock Grid.Column="2" Text="Кол-во" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+            </Grid>
+        </Border>
+        <Button DockPanel.Dock="Bottom" Content="Назад" Click="Back_Click"/>
+
+        <ListBox x:Name="SalesTable" MaxHeight="280">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="#EEEEEE" BorderThickness="0,0,0,1" Padding="8,6">
+                        <Grid ColumnDefinitions="200,*,80">
+                            <TextBlock Grid.Column="0" Text="{Binding AddedDate}"/>
+                            <TextBlock Grid.Column="1" Text="{Binding Product.ProductName}" TextWrapping="Wrap"/>
+                            <TextBlock Grid.Column="2" Text="{Binding ProductQuantity}" HorizontalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+    </DockPanel>
+    
+</Window>

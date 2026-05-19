@@ -22,24 +22,38 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
 build_property.RootNamespace = diplomdemo
-build_property.ProjectDir = C:\Users\Оливье\source\repos\diplomdemo\diplomdemo\
+build_property.ProjectDir = /home/gara/RiderProjects/123123/diplomdemo/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Оливье/source/repos/diplomdemo/diplomdemo/AddProduct.axaml]
+[/home/gara/RiderProjects/123123/diplomdemo/AddProductWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Оливье/source/repos/diplomdemo/diplomdemo/App.axaml]
+[/home/gara/RiderProjects/123123/diplomdemo/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Оливье/source/repos/diplomdemo/diplomdemo/MainWindow.axaml]
+[/home/gara/RiderProjects/123123/diplomdemo/InputDialog.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Оливье/source/repos/diplomdemo/diplomdemo/ProductWin.axaml]
+[/home/gara/RiderProjects/123123/diplomdemo/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Оливье/source/repos/diplomdemo/diplomdemo/RegWin.axaml]
+[/home/gara/RiderProjects/123123/diplomdemo/ProductHistoryWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/gara/RiderProjects/123123/diplomdemo/ProductWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/gara/RiderProjects/123123/diplomdemo/RegWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/gara/RiderProjects/123123/diplomdemo/ReportMarketWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/gara/RiderProjects/123123/diplomdemo/ReportShelfWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

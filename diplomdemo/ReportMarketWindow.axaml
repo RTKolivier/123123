@@ -1,0 +1,93 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Avalonia;assembly=LiveChartsCore.SkiaSharpView.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="850"
+        x:Class="diplomdemo.ReportMarketWindow"
+        Title="Отчётность по маркетам"
+        Width="1100" Height="850"
+        x:CompileBindings="False">
+    <DockPanel Margin="15">
+        <Button Content="Назад" Click="Back_Click" DockPanel.Dock="Bottom" HorizontalAlignment="Left"/>
+
+        <ScrollViewer DockPanel.Dock="Left" Width="380" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Spacing="10">
+                <TextBlock Text="Мероприятие (маркет)" FontSize="16" FontWeight="SemiBold"/>
+                <ComboBox x:Name="MarketCombo"
+                          PlaceholderText="Выберите маркет"
+                          SelectionChanged="MarketCombo_SelectionChanged"/>
+                <TextBlock x:Name="MarketDateText" TextWrapping="Wrap" Opacity="0.8"/>
+
+                <Separator/>
+
+                <TextBlock Text="Продажа на маркете" FontSize="16" FontWeight="SemiBold"/>
+                <TextBox x:Name="ProductSearchBox"
+                         Watermark="Быстрый поиск товара..."
+                         KeyUp="ProductSearchBox_KeyUp"/>
+
+                <ScrollViewer MaxHeight="380" HorizontalScrollBarVisibility="Disabled">
+                    <ItemsControl x:Name="GroupedProducts">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="0,0,0,8">
+                                    <TextBlock Text="{Binding GroupName}"
+                                               FontWeight="SemiBold"
+                                               Margin="0,4,0,4"/>
+                                    <ListBox ItemsSource="{Binding Products}"
+                                             SelectionChanged="ProductList_SelectionChanged"
+                                             MaxHeight="160">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ProductName}"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+
+                <TextBlock x:Name="SelectedProductText" Text="Товар не выбран" TextWrapping="Wrap"/>
+                <TextBox x:Name="QuantityBox" Watermark="Количество"/>
+                <Button Content="Добавить в продажу маркета" Click="AddMarketSell_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <ScrollViewer Margin="10,0,0,0" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Spacing="10">
+                <lvc:CartesianChart x:Name="SalesChart" Height="350"/>
+
+                <TextBlock Text="Продажи выбранного маркета" FontSize="16" FontWeight="SemiBold"/>
+                <TextBlock Text="График — суммы по всем прошлым маркетам" Opacity="0.7"/>
+
+                <Border BorderBrush="#CCCCCC" BorderThickness="1" Padding="8,6">
+                    <Grid ColumnDefinitions="90,*,110,70,90">
+                        <TextBlock Grid.Column="0" Text="Дата" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="1" Text="Товар" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="2" Text="Маркет" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="3" Text="Кол-во" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                        <TextBlock Grid.Column="4" Text="Сумма, ₽" FontWeight="SemiBold" HorizontalAlignment="Right"/>
+                    </Grid>
+                </Border>
+
+                <ListBox x:Name="SalesTable" MaxHeight="280">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="#EEEEEE" BorderThickness="0,0,0,1" Padding="8,6">
+                                <Grid ColumnDefinitions="90,*,110,70,90">
+                                    <TextBlock Grid.Column="0" Text="{Binding SaleDate}"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding ProductName}" TextWrapping="Wrap"/>
+                                    <TextBlock Grid.Column="2" Text="{Binding MarketName}" TextWrapping="Wrap"/>
+                                    <TextBlock Grid.Column="3" Text="{Binding Quantity}" HorizontalAlignment="Center"/>
+                                    <TextBlock Grid.Column="4" Text="{Binding TotalAmount}" HorizontalAlignment="Right"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</Window>

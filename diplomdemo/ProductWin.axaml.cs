@@ -1,6 +1,8 @@
 using System.Linq;
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Input;
+using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using diplomdemo.Models;
 using Microsoft.EntityFrameworkCore;
@@ -11,11 +13,13 @@ namespace diplomdemo;
 public partial class ProductWin : Window
 {
     User _user;
+
     public ProductWin()
     {
         InitializeComponent();
-        
+
     }
+
     public ProductWin(User user)
     {
         InitializeComponent();
@@ -25,35 +29,38 @@ public partial class ProductWin : Window
         PullCombo();
         GetInfo();
     }
-   
+
     private void Back_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
         MainWindow window = new MainWindow();
         window.Show();
         this.Close();
     }
-    
+
     public void GetInfo()
     {
         OrbitContext context = new OrbitContext();
         var product = context.Products
-            .Include(x=>x.ProductFandomNavigation)
-            .Include(x=>x.ProductSizeNavigation)
-            .Include(x=>x.ProductTypeNavigation)
+            .Include(x => x.ProductFandomNavigation)
+            .Include(x => x.ProductSizeNavigation)
+            .Include(x => x.ProductTypeNavigation)
             .ToList();
 
         if (SearchBox.Text != null)
         {
-            product = product.Where(x => x.ProductFandomNavigation.FandomsName.Contains(SearchBox.Text) || 
-            x.ProductSizeNavigation.ProductSizeName.Contains(SearchBox.Text) ||
-            x.ProductTypeNavigation.ProductTypeName.Contains(SearchBox.Text)||
-            x.ProductName.Contains(SearchBox.Text))
-            .ToList();
+            product = product.Where(x => x.ProductFandomNavigation.FandomsName.Contains(SearchBox.Text) ||
+                                         x.ProductSizeNavigation.ProductSizeName.Contains(SearchBox.Text) ||
+                                         x.ProductTypeNavigation.ProductTypeName.Contains(SearchBox.Text) ||
+                                         x.ProductName.Contains(SearchBox.Text))
+                .ToList();
         }
+
         if (FilterCombo.SelectedIndex != -1 && FilterCombo.SelectedIndex != 0)
         {
-            product = product.Where(x => x.ProductFandomNavigation.FandomsName == FilterCombo.SelectedItem!.ToString()).ToList();
+            product = product.Where(x => x.ProductFandomNavigation.FandomsName == FilterCombo.SelectedItem!.ToString())
+                .ToList();
         }
+
         switch (SortingCombo.SelectedIndex)
         {
             case 0:
@@ -66,20 +73,23 @@ public partial class ProductWin : Window
 
         ProductList.ItemsSource = product;
     }
+
     private void AddProduct_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        AddProduct window = new AddProduct();
-        window.Show();
-        this.Close();
+        new AddProductWindow(_user).Show();
+        Close();
     }
+
     private void SearchBox_KeyUp(object? sender, Avalonia.Input.KeyEventArgs e)
     {
         GetInfo();
     }
+
     private void SortingCombo_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
         GetInfo();
     }
+
     private void PullCombo()
     {
         OrbitContext context = new OrbitContext();
@@ -87,5 +97,57 @@ public partial class ProductWin : Window
         combos.Add("Все фандомы");
 
         FilterCombo.ItemsSource = combos.OrderByDescending(x => x == "Все фандомы");
+    }
+
+    private void ReportClick(object? sender, RoutedEventArgs e)
+    {
+        new ReportShelfWindow(_user).Show();
+        Close();
+    }
+
+    private void MarketClick(object? sender, RoutedEventArgs e)
+    {
+        new ReportMarketWindow(_user).Show();
+        Close();
+    }
+
+    private async void ProductList_MouseDoubleClick(object? sender, TappedEventArgs e)
+    {
+        if (ProductList.SelectedItem is Product selectedProduct)
+        {
+            var dialog = new InputDialog("Введите количество для пополнения");
+            var result = await dialog.ShowDialog<bool>(this);
+            if (result == true)
+            {
+                if (int.TryParse(dialog.Result, out int quantityToAdd))
+                {
+                    var context = new OrbitContext();
+                    var product = context.Products.FirstOrDefault(x => x.ProductId == selectedProduct.ProductId);
+                    if (product != null)
+                    {
+                        product.ProductQuantity += quantityToAdd;
+                        context.SaveChanges();
+
+                        var history = new ProductHistory
+                        {
+                            ProductId = product.ProductId,
+                            ProductQuantity = quantityToAdd,
+                            AddedDate = System.DateTime.Now
+                        };
+
+                        context.ProductHistories.Add(history);
+                        context.SaveChanges();
+
+                        GetInfo(); // Обновить список
+                    }
+                }
+            }
+        }
+    }
+
+    private void HistoryClick(object? sender, RoutedEventArgs e)
+    {
+        new ProductHistoryWindow(_user).Show();
+        Close();
     }
 }

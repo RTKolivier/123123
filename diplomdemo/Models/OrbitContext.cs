@@ -17,7 +17,15 @@ public partial class OrbitContext : DbContext
 
     public virtual DbSet<Fandom> Fandoms { get; set; }
 
+    public virtual DbSet<Market> Markets { get; set; }
+
+    public virtual DbSet<MarketSell> MarketSells { get; set; }
+
+    public virtual DbSet<PointSale> PointSales { get; set; }
+
     public virtual DbSet<Product> Products { get; set; }
+
+    public virtual DbSet<ProductHistory> ProductHistories { get; set; }
 
     public virtual DbSet<ProductSize> ProductSizes { get; set; }
 
@@ -25,11 +33,13 @@ public partial class OrbitContext : DbContext
 
     public virtual DbSet<Role> Roles { get; set; }
 
+    public virtual DbSet<SellingPoint> SellingPoints { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Host=176.123.161.45;Port=5432;Database=orbit;Password=orbit;Username=orbit");
+        => optionsBuilder.UseNpgsql("Host=176.123.161.45;Port=5432;Database=orbit;Username=orbit;Password=orbit");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -43,6 +53,70 @@ public partial class OrbitContext : DbContext
                 .HasDefaultValueSql("nextval('fandoms_fandoms_id_seq'::regclass)")
                 .HasColumnName("fandoms_id");
             entity.Property(e => e.FandomsName).HasColumnName("fandoms_name");
+        });
+
+        modelBuilder.Entity<Market>(entity =>
+        {
+            entity.HasKey(e => e.MarketId).HasName("markets_pkey");
+
+            entity.ToTable("markets", "orbit");
+
+            entity.Property(e => e.MarketId)
+                .HasDefaultValueSql("nextval('markets_market_id_seq'::regclass)")
+                .HasColumnName("market_id");
+            entity.Property(e => e.MarketDate).HasColumnName("market_date");
+            entity.Property(e => e.MarketName).HasColumnName("market_name");
+            entity.Property(e => e.MarketSumm).HasColumnName("market_summ");
+        });
+
+        modelBuilder.Entity<MarketSell>(entity =>
+        {
+            entity.HasKey(e => new { e.MarketId, e.ProductId }).HasName("market_sells_pkey");
+
+            entity.ToTable("market_sells", "orbit");
+
+            entity.Property(e => e.MarketId).HasColumnName("market_id");
+            entity.Property(e => e.ProductId).HasColumnName("product_id");
+            entity.Property(e => e.MarketProductAmmount).HasColumnName("market_product_ammount");
+            entity.Property(e => e.MarketProductCount).HasColumnName("market_product_count");
+
+            entity.HasOne(d => d.Market).WithMany(p => p.MarketSells)
+                .HasForeignKey(d => d.MarketId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("market_sells_market_id_fkey");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.MarketSells)
+                .HasForeignKey(d => d.ProductId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("market_sells_product_id_fkey");
+        });
+
+        modelBuilder.Entity<PointSale>(entity =>
+        {
+            entity.HasKey(e => e.SaleId).HasName("point_sales_pkey");
+
+            entity.ToTable("point_sales", "orbit");
+
+            entity.Property(e => e.SaleId)
+                .HasDefaultValueSql("nextval('point_sales_sale_id_seq'::regclass)")
+                .HasColumnName("sale_id");
+            entity.Property(e => e.PointProductAmmount).HasColumnName("point_product_ammount");
+            entity.Property(e => e.PointProductCount).HasColumnName("point_product_count");
+            entity.Property(e => e.ProductId).HasColumnName("product_id");
+            entity.Property(e => e.SaleTimestamp)
+                .HasDefaultValueSql("CURRENT_DATE")
+                .HasColumnName("sale_timestamp");
+            entity.Property(e => e.SellPointId).HasColumnName("sell_point_id");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.PointSales)
+                .HasForeignKey(d => d.ProductId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("point_sales_product_id_fkey");
+
+            entity.HasOne(d => d.SellPoint).WithMany(p => p.PointSales)
+                .HasForeignKey(d => d.SellPointId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("point_sales_sell_point_id_fkey");
         });
 
         modelBuilder.Entity<Product>(entity =>
@@ -79,6 +153,28 @@ public partial class OrbitContext : DbContext
                 .HasConstraintName("product_product_type_fkey");
         });
 
+        modelBuilder.Entity<ProductHistory>(entity =>
+        {
+            entity.HasKey(e => e.HistoryId).HasName("product_history_pkey");
+
+            entity.ToTable("product_history", "orbit");
+
+            entity.Property(e => e.HistoryId)
+                .HasDefaultValueSql("nextval('product_history_history_id_seq'::regclass)")
+                .HasColumnName("history_id");
+            entity.Property(e => e.AddedDate)
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("added_date");
+            entity.Property(e => e.ProductId).HasColumnName("product_id");
+            entity.Property(e => e.ProductQuantity).HasColumnName("product_quantity");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.ProductHistories)
+                .HasForeignKey(d => d.ProductId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("product_history_product_id_fkey");
+        });
+
         modelBuilder.Entity<ProductSize>(entity =>
         {
             entity.HasKey(e => e.ProductSizeId).HasName("product_size_pkey");
@@ -113,6 +209,18 @@ public partial class OrbitContext : DbContext
                 .HasDefaultValueSql("nextval('role_role_id_seq'::regclass)")
                 .HasColumnName("role_id");
             entity.Property(e => e.RoleName).HasColumnName("role_name");
+        });
+
+        modelBuilder.Entity<SellingPoint>(entity =>
+        {
+            entity.HasKey(e => e.SellPointId).HasName("selling_points_pkey");
+
+            entity.ToTable("selling_points", "orbit");
+
+            entity.Property(e => e.SellPointId)
+                .HasDefaultValueSql("nextval('selling_points_sell_point_id_seq'::regclass)")
+                .HasColumnName("sell_point_id");
+            entity.Property(e => e.SellPointName).HasColumnName("sell_point_name");
         });
 
         modelBuilder.Entity<User>(entity =>

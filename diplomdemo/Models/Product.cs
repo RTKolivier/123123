@@ -15,6 +15,15 @@ public partial class Product
     public string? ProductName { get; set; }
 
     public int? ProductQuantity { get; set; }
+
+    public int? ProductCost { get; set; }
+
+    public int? ProductFandom { get; set; }
+
+    public int? ProductSale { get; set; }
+
+    public string? ProductPhoto { get; set; }
+    
     public string ColorQuantity
     {
         get
@@ -29,12 +38,7 @@ public partial class Product
             }
         }
     }
-
-    public int? ProductCost { get; set; }
-
-    public int? ProductFandom { get; set; }
-
-    public int? ProductSale { get; set; }
+    
     public string ColorDiscount
     {
         get
@@ -49,8 +53,7 @@ public partial class Product
             }
         }
     }
-
-    public string? ProductPhoto { get; set; }
+    
     public Bitmap GetPhoto
     {
         get
@@ -66,7 +69,13 @@ public partial class Product
         }
     }
 
+    public virtual ICollection<MarketSell> MarketSells { get; set; } = new List<MarketSell>();
+
+    public virtual ICollection<PointSale> PointSales { get; set; } = new List<PointSale>();
+
     public virtual Fandom? ProductFandomNavigation { get; set; }
+
+    public virtual ICollection<ProductHistory> ProductHistories { get; set; } = new List<ProductHistory>();
 
     public virtual ProductSize? ProductSizeNavigation { get; set; }
 

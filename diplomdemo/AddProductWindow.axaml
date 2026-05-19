@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="diplomdemo.AddProductWindow"
+        Title="Добавление товара" Height="400" Width="400">
+    <StackPanel Spacing="10">
+        <TextBox Name="ProductName" Watermark="Название товара"/>
+        <ComboBox Name="ProductType" PlaceholderText="Тип товара"/>
+        <ComboBox Name="ProductSize" PlaceholderText="Размер"/>
+        <TextBox Name="ProductQuantity" Watermark="Количество"/>
+        <TextBox Name="ProductCost" Watermark="Стоимость"/>
+        <ComboBox Name="ProductFandom" PlaceholderText="Фандом"/>
+        <TextBox Name="ProductSale" Watermark="Скидка (%)"/>
+        <Button Content="Создать новый фандом" Click="CreateFandom_Click"/>
+        <Button Content="Добавить товар" Click="AddProduct_Click"/>
+    </StackPanel>
+</Window>

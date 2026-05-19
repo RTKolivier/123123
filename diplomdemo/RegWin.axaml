@@ -7,7 +7,7 @@
         Title="RegWin"
 		>
 	<DockPanel>
-		<StackPanel>
+		<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="10">
 			<TextBlock> Регистрация:</TextBlock>
 			<ComboBox Name="RoleBox"
 					  Height="40" Width="200"
@@ -25,6 +25,7 @@
 					 Height="40" Width="200"
 					 Watermark="Пароль"></TextBox>
 			<Button
+				HorizontalAlignment="Center"
 				Name="SaveUser" 
 				Click="Save_Click"
 				Content="Сохранить">
