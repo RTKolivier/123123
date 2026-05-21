@@ -3,9 +3,11 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="diplomdemo/AddMarketWindow.axaml" value="diplomdemo/diplomdemo.csproj" />
         <entry key="diplomdemo/AddProduct.axaml" value="diplomdemo/diplomdemo.csproj" />
         <entry key="diplomdemo/AddProductWindow.axaml" value="diplomdemo/diplomdemo.csproj" />
         <entry key="diplomdemo/App.axaml" value="diplomdemo/diplomdemo.csproj" />
+        <entry key="diplomdemo/InputDialog.axaml" value="diplomdemo/diplomdemo.csproj" />
         <entry key="diplomdemo/MainWindow.axaml" value="diplomdemo/diplomdemo.csproj" />
         <entry key="diplomdemo/ProductHistoryWindow.axaml" value="diplomdemo/diplomdemo.csproj" />
         <entry key="diplomdemo/ProductWin.axaml" value="diplomdemo/diplomdemo.csproj" />

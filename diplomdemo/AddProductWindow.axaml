@@ -4,16 +4,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="diplomdemo.AddProductWindow"
-        Title="Добавление товара" Height="400" Width="400">
+        Title="Добавление товара" Height="800" Width="600">
     <StackPanel Spacing="10">
         <TextBox Name="ProductName" Watermark="Название товара"/>
-        <ComboBox Name="ProductType" PlaceholderText="Тип товара"/>
+        <AutoCompleteBox Name="ProductType" Watermark="Тип товара" FilterMode="StartsWith"/>
         <ComboBox Name="ProductSize" PlaceholderText="Размер"/>
         <TextBox Name="ProductQuantity" Watermark="Количество"/>
         <TextBox Name="ProductCost" Watermark="Стоимость"/>
-        <ComboBox Name="ProductFandom" PlaceholderText="Фандом"/>
+        <AutoCompleteBox Name="ProductFandom" Watermark="Фандом"/>
         <TextBox Name="ProductSale" Watermark="Скидка (%)"/>
-        <Button Content="Создать новый фандом" Click="CreateFandom_Click"/>
+        <Button Click="AddPhotoClick" Content="Добавить фотографию"/>
+        <Image Name="PhotoImage" Height="150"/>
         <Button Content="Добавить товар" Click="AddProduct_Click"/>
     </StackPanel>
 </Window>

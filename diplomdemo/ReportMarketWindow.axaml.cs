@@ -322,4 +322,12 @@ public partial class ReportMarketWindow : Window
         public string GroupName { get; init; } = string.Empty;
         public List<Product> Products { get; init; } = new();
     }
+
+    private void CreateMarketClick(object? sender, RoutedEventArgs e)
+    {
+        new AddMarketWindow(_user).ShowDialog(this);
+        
+        LoadMarkets();
+        
+    }
 }

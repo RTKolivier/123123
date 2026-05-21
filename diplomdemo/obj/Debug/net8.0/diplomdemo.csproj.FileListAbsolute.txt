@@ -180,17 +180,6 @@ C:/Users/Оливье/source/repos/diplomdemo/diplomdemo/bin/Debug/net8.0/Images
 C:/Users/Оливье/source/repos/diplomdemo/diplomdemo/bin/Debug/net8.0/Images/8.png
 C:/Users/Оливье/source/repos/diplomdemo/diplomdemo/bin/Debug/net8.0/Images/9.png
 /home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/diplomdemo
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/1.png
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/10.png
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/111.png
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/2.png
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/3.png
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/4.png
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/5.png
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/6.png
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/7.png
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/8.png
-/home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/Images/9.png
 /home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/diplomdemo.deps.json
 /home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/diplomdemo.runtimeconfig.json
 /home/gara/RiderProjects/123123/diplomdemo/bin/Debug/net8.0/diplomdemo.dll

@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using Avalonia;
 using Avalonia.Controls;
@@ -149,5 +150,16 @@ public partial class ProductWin : Window
     {
         new ProductHistoryWindow(_user).Show();
         Close();
+    }
+
+    private void MenuItem_OnClick(object? sender, RoutedEventArgs e)
+    {
+        if (ProductList.SelectedItem is Product selectedProduct)
+        {
+            var context = new OrbitContext();
+            context.Products.Remove(selectedProduct);
+            context.SaveChanges();
+            GetInfo();
+        }
     }
 }

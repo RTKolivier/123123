@@ -17,6 +17,7 @@
                 <ComboBox x:Name="MarketCombo"
                           PlaceholderText="Выберите маркет"
                           SelectionChanged="MarketCombo_SelectionChanged"/>
+                <Button Content="Добавить маркет" Click="CreateMarketClick"/>
                 <TextBlock x:Name="MarketDateText" TextWrapping="Wrap" Opacity="0.8"/>
 
                 <Separator/>

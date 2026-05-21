@@ -60,7 +60,7 @@ public partial class Product
         {
             if (ProductPhoto != null && ProductPhoto != "")
             {
-                return new Bitmap(AppDomain.CurrentDomain.BaseDirectory + "/" + ProductPhoto);
+                return new Bitmap(AppDomain.CurrentDomain.BaseDirectory + "/Images/" + ProductPhoto);
             }
             else
             {

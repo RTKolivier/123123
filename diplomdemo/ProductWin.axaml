@@ -40,6 +40,11 @@
 		</StackPanel>
 		<StackPanel>
 			<ListBox Name="ProductList" Height="700" DoubleTapped="ProductList_MouseDoubleClick">
+				<ListBox.ContextMenu>
+					<ContextMenu >
+						<MenuItem Header="Удалить" Click="MenuItem_OnClick"/>
+					</ContextMenu>
+				</ListBox.ContextMenu>
 				<ListBox.ItemTemplate>
 					<DataTemplate>
 						<DockPanel>

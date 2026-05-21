@@ -33,16 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Images\1.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\10.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="Images\11.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\111.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Images\12.png">
@@ -54,29 +45,52 @@
     <None Update="Images\14.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Images\2.png">
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\1.png" />
+    <AvaloniaResource Include="Images\1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\3.png">
+    </AvaloniaResource>
+    <None Remove="Images\2.png" />
+    <AvaloniaResource Include="Images\2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\4.png">
+    </AvaloniaResource>
+    <None Remove="Images\3.png" />
+    <AvaloniaResource Include="Images\3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\5.png">
+    </AvaloniaResource>
+    <None Remove="Images\4.png" />
+    <AvaloniaResource Include="Images\4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\6.png">
+    </AvaloniaResource>
+    <None Remove="Images\5.png" />
+    <AvaloniaResource Include="Images\5.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\7.png">
+    </AvaloniaResource>
+    <None Remove="Images\6.png" />
+    <AvaloniaResource Include="Images\6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\8.png">
+    </AvaloniaResource>
+    <None Remove="Images\7.png" />
+    <AvaloniaResource Include="Images\7.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\9.png">
+    </AvaloniaResource>
+    <None Remove="Images\8.png" />
+    <AvaloniaResource Include="Images\8.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </AvaloniaResource>
+    <None Remove="Images\9.png" />
+    <AvaloniaResource Include="Images\9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AvaloniaResource>
+    <None Remove="Images\10.png" />
+    <AvaloniaResource Include="Images\10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AvaloniaResource>
+    <None Remove="Images\111.png" />
+    <AvaloniaResource Include="Images\111.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AvaloniaResource>
   </ItemGroup>
 </Project>
